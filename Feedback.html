@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire NOC Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #00529b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .feedback-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .feedback-form h2 {
+            color: #00529b;
+            margin-bottom: 20px;
+        }
+
+        .feedback-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .feedback-form input[type="text"],
+        .feedback-form input[type="email"],
+        .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .feedback-form button {
+            padding: 10px 20px;
+            background-color: #00529b;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .feedback-form button:hover {
+            background-color: #003d80;
+        }
+
+        footer {
+            background-color: #00529b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Feedback on Fire NOC Process</h1>
+    </header>
+
+    <main>
+        <div class="feedback-form">
+            <h2>We Value Your Feedback on Fire NOCs</h2>
+            <form action="submit_feedback.php" method="POST">
+                <!-- NOC Application Number -->
+                <label for="nocNumber">NOC Application Number:</label>
+                <input type="text" id="nocNumber" name="nocNumber" required placeholder="Enter your NOC application number">
+
+                <!-- Applicant's Name -->
+                <label for="applicantName">Applicant's Name:</label>
+                <input type="text" id="applicantName" name="applicantName" required placeholder="Enter your full name">
+
+                <!-- Applicant's Email -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                <!-- Feedback on the NOC Process -->
+                <label for="feedback">Your Feedback on the NOC Process:</label>
+                <textarea id="feedback" name="feedback" rows="6" required placeholder="Provide your feedback on the NOC application process"></textarea>
+
+                <!-- Suggestions for Improvement -->
+                <label for="suggestions">Suggestions for Improvement (Optional):</label>
+                <textarea id="suggestions" name="suggestions" rows="4" placeholder="Any suggestions for improving the NOC process?"></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Government of NCT of Delhi - Fire Department</p>
+    </footer>
+</body>
+</html>

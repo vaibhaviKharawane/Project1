@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Objection Certificates - Fire</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="Application NOCs" href="Application NOCs.html">
+    <link rel="About Us" href="About Us.html">
+    <link rel="Download" href="Download.html">
+    <link rel="Contact" href="Contact.html">
+    <link rel="Other" href="Other.html">
+    <link rel="Feedback" href="Feedback.html">
+    <link rel="Sitemap" href="Sitemap.html">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Blue line above the header with login and single language toggle */
+        .blue-line {
+            background-color: #00529b; /* Blue color */
+            height: 40px; /* Increased height for better spacing */
+            width: 100%; /* Full width */
+            display: flex; /* Flexbox for alignment */
+            justify-content: flex-end; /* Align items to the right */
+            align-items: center; /* Center vertically */
+            padding-right: 30px; /* Increased padding to the right */
+            box-sizing: border-box;
+            color: white;
+            border-bottom: 2px solid #003d80; /* Slightly darker blue border for better separation */
+        }
+
+        .blue-line a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px; /* Increased margin for better spacing */
+            font-size: 1.1rem; /* Slightly larger font size */
+        }
+
+        .language-toggle {
+            margin-left: 30px; /* Space before the language toggle */
+        }
+
+        .language-toggle button {
+            background-color: transparent;
+            border: 1px solid white; /* Added border for better visibility */
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+            padding: 5px 10px; /* Added padding for better button appearance */
+            border-radius: 4px; /* Rounded corners */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition effects */
+        }
+
+        .language-toggle button:hover {
+            background-color: white; /* Background color on hover */
+            color: #00529b; /* Text color on hover */
+        }
+
+        header {
+            position: relative;
+            background-image: url(delhi\ par.jpg); /* Add a background image if needed */
+            background-size: cover;
+            background-position: center;
+            height: 120px; /* Increased height for better header spacing */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f7f5f5;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .extra-image-left, .extra-image-right {
+            position: absolute;
+            top: 0;
+            height: 120px; /* Match the header height */
+            width: auto; /* Maintain aspect ratio */
+            z-index: 2; /* Ensure they appear above other content */
+        }
+
+        .extra-image-left {
+            left: 0;
+        }
+
+        .extra-image-right {
+            right: 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem; /* Increased font size for better visibility */
+            font-weight: bold;
+            z-index: 1;
+            position: relative;
+            margin: 0; /* Remove default margin */
+        }
+
+        nav {
+            background-color: #dab0b0;
+            padding: 15px; /* Increased padding for better spacing */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav li {
+            display: inline-block;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 1rem;
+            padding: 5px 10px; /* Added padding for better link appearance */
+            border-radius: 4px; /* Rounded corners for links */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition effects */
+        }
+
+        nav a:hover {
+            background-color: #003d80; /* Darker background on hover */
+            color: white; /* White text color on hover */
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px; /* Space between input and button */
+        }
+
+        .search-bar button {
+            padding: 8px 15px;
+            border: none;
+            background-color: #00529b;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s; /* Smooth transition effect */
+        }
+
+        .search-bar button:hover {
+            background-color: #003d80; /* Darker blue on hover */
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #d3c6c6;
+            border: 1px solid #d3c6c6;
+            padding: 15px; /* Increased padding for better spacing */
+        }
+
+        .content {
+            width: 80%;
+            background-color: #d3c6c6;
+            border: 2px solid #d3c6c6;
+            padding: 15px; /* Increased padding for better spacing */
+        }
+
+        h1 {
+            font-weight: 50;
+            color: #000000;
+        }
+
+        h2, h3 {
+            color: #333;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #dab0b0;
+            padding: 20px 0; /* Increased padding for better spacing */
+            text-align: center;
+            font-size: 0.9rem; /* Slightly smaller font size */
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Blue line with Login and Single Language Toggle -->
+    <div class="blue-line">
+        <a href="Login.html">Login</a>
+        <div class="language-toggle">
+            <button id="language-button" onclick="toggleLanguage()">Hindi</button>
+        </div>
+    </div>
+
+    <header>
+        <img src="sataylogo.jpg" alt="Extra Image Left" class="extra-image-left">
+        <img src="ajadi.jpj.png" alt="Extra Image Right" class="extra-image-right">
+        <h1 id="header-title">FIRE DEPARTMENT OF DELHI</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Sign In.html">Sign In</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="Application NOCs.html">Application NOCs</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Sitemap.html">Sitemap</a></li>
+            <li><a href="Download.html">Download</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Other.html">Other</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+        </ul>
+
+        <!-- Search bar starts here -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <h2>Navigation</h2>
+                <ul>
+                    <li>Organization</li>
+                    <li>Renewal</li>
+                    <li>Acts and Rules</li>
+                    <li>Centralized Circulars</li>
+                    <li>Notifications</li>
+                    <li>Procedure for NOC</li>
+                    <li>No Objection Certificates</li>
+                    <li>Do's & Dont's</li>
+                </ul>
+                <p>Visitor No: 21134605</p>
+            </div>
+
+            <div class="content">
+                <h2>No Objection Certificates</h2>
+                <label for="checklist">Check List for NOC</label>
+                <input id="checklist" type="text" placeholder="Check List for NOC">
+                <label for="workflow">Procedure & Work Flow for NOC</label>
+                <input id="workflow" type="text" placeholder="Procedure & Work Flow for NOC">
+                <h2>Apply for Online NOC from Fire Services Department NOC</h2>
+                <p>Site Inspection Report(Pre-establishment NOC)-reg.</p>
+                <label for="search">Enter keyword</label>
+                <input id="search" type="text" placeholder="Enter keyword">
+                <p>Last Updated On: 10/09/2024</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Accessibility Options | Disclaimer | Copyright Policy | Terms & Conditions | Privacy Policy | Hyper Linking Policy | Help</p>
+        <p>Content on this website is published and managed by the Department/Organisation</p>
+        <p>For any query regarding this website, please contact the Web Information Manager</p>
+        <p>Hosted by Government of NCT of Delhi </p>
+        <p>Best Viewed in 1024 x 768</p>
+    </footer>
+
+    <!-- JavaScript for toggling the language -->
+    <script>
+        let currentLanguage = 'en';
+
+        function toggleLanguage() {
+            const languageButton = document.getElementById('language-button');
+            const headerTitle = document.getElementById('header-title');
+
+            if (currentLanguage === 'en') {
+                currentLanguage = 'hi';
+                languageButton.textContent = 'English'; // Show 'English' when Hindi is selected
+                headerTitle.textContent = 'दिल्ली अग्निशमन विभाग'; // Hindi text for FIRE DEPARTMENT OF DELHI
+            } else {
+                currentLanguage = 'en';
+                languageButton.textContent = 'Hindi'; // Show 'Hindi' when English is selected
+                headerTitle.textContent = 'FIRE DEPARTMENT OF DELHI';
+            }
+        }
+    </script>
+</body>
+</html>
